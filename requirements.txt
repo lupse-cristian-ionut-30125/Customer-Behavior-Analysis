@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+mlxtend
+plotly
+seaborn
+matplotlib
+streamlit
+jupyter
+notebook
+pyarrow
+openpyxl
+pyyaml
+pytest
+ruff
+black

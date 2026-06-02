@@ -1,0 +1,22 @@
+name: customer-behavior-analysis
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - pandas
+  - numpy
+  - scikit-learn
+  - mlxtend
+  - plotly
+  - seaborn
+  - matplotlib
+  - streamlit
+  - jupyter
+  - notebook
+  - pyarrow
+  - openpyxl
+  - pyyaml
+  - pytest
+  - ruff
+  - black
+  - pip
