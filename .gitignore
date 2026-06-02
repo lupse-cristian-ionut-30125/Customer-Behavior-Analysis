@@ -4,3 +4,23 @@ Thumbs.db
 
 # Secrets
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Python venv
+.venv/
+
+# Claude Code
+.claude/
+plan.md
+
+# Data (medallion: bronze/silver/gold)
+data/bronze/*
+data/silver/*
+data/gold/*
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
