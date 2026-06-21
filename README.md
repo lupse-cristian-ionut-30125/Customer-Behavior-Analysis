@@ -37,6 +37,9 @@ conda env create -f environment.yml
 conda activate customer-behavior-analysis
 ```
 
+> Notebook 06 (market basket) uses Spark MLlib FP-Growth via PySpark, which
+> requires a **Java 17** runtime with `JAVA_HOME` set.
+
 ## Run
 
 ```bash
@@ -60,9 +63,9 @@ streamlit run dashboard/app.py
 | Ingestion | `src/data.py` | `01_data_ingestion.ipynb` | `bronze/transactions_concat.parquet`, `silver/transactions_clean.parquet` | ✓ |
 | EDA | — | `02_eda.ipynb` | `reports/figures/02_*.png`, `reports/tables/02_*.csv` | ✓ |
 | RFM | `src/rfm.py` | `03_rfm_analysis.ipynb` | `gold/rfm_table.parquet` | ✓ |
-| K-Means | `src/segmentation.py` | `04_kmeans_segmentation.ipynb` | `gold/customer_segments.parquet` | — |
-| Profiling | — | `05_segment_profiling.ipynb` | figures + tables | — |
-| Basket | `src/basket.py` | `06_market_basket.ipynb` | `gold/basket_rules.parquet` | — |
+| K-Means | `src/segmentation.py` | `04_kmeans_segmentation.ipynb` | `gold/customer_segments.parquet` | ✓ |
+| Profiling | — | `05_segment_profiling.ipynb` | `gold/segment_summary.parquet`, `reports/figures/05_*.png`, `reports/tables/05_*.csv` | ✓ |
+| Basket | `src/basket.py` | `06_market_basket.ipynb` | `gold/basket_rules.parquet` | ✓ |
 | Dashboard | `dashboard/app.py` + pages | — | Streamlit app | — |
 | Pipeline CLI | `scripts/run_pipeline.py` | — | — | — |
 | Tests | `tests/` | — | — | — |

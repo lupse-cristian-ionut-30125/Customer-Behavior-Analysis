@@ -14,6 +14,7 @@ paths:
 kmeans:
   scaler: "standard"
   log_transform: true
+  chosen_k: 4  # selected via elbow + cluster-validity indices (see nb 04)
 
 basket:
   min_support: 0.02
