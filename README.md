@@ -50,7 +50,8 @@ streamlit run dashboard/app.py
 ## Conventions
 
 - Code + comments: English.
-- Thesis text + dashboard UI: Romanian.
+- Thesis text: Romanian.
+- Dashboard UI: English.
 - Currency: GBP throughout.
 - Scope: UK transactions only.
 - Snapshot date: 2011-12-10 (fixed).
@@ -66,8 +67,8 @@ streamlit run dashboard/app.py
 | K-Means | `src/segmentation.py` | `04_kmeans_segmentation.ipynb` | `gold/customer_segments.parquet` | ✓ |
 | Profiling | — | `05_segment_profiling.ipynb` | `gold/segment_summary.parquet`, `reports/figures/05_*.png`, `reports/tables/05_*.csv` | ✓ |
 | Basket | `src/basket.py` | `06_market_basket.ipynb` | `gold/basket_rules.parquet` | ✓ |
-| Dashboard | `dashboard/app.py` + pages | — | Streamlit app | — |
-| Pipeline CLI | `scripts/run_pipeline.py` | — | — | — |
+| Dashboard | `dashboard/app.py` + pages | — | Streamlit app (6 pages) | ✓ |
+| Pipeline CLI | `scripts/run_pipeline.py` | — | all `gold/*.parquet` | ✓ |
 | Tests | `tests/` | — | — | — |
 
 ### Current data shape (post-cleaning)
